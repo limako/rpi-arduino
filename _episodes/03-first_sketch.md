@@ -1,0 +1,66 @@
+---
+title: "First Sketch"
+teaching: 0
+exercises: 0
+questions:
+- "Key question (FIXME)"
+objectives:
+- "First learning objective. (FIXME)"
+keypoints:
+- "First key point. Brief Answer to questions. (FIXME)"
+---
+
+The classic "hello world" program in the Arduino world is "blink".
+
+This command will create a new sketch.
+
+~~~
+$ arduino-cli sketch new blink
+~~~
+{: .language-bash}
+
+This creates a directory named "blink" and a file inside named "blink.ino" which contains the program.  Go into directory (i.e. "cd blink") and then edit the blink.ino file.  The file will already contain "setup" and "loop functions" but you can delete everything and replace with this:
+
+~~~
+void setup() {
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(500);
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(500);
+}
+~~~
+{: .language-arduino}
+
+> ## Case Sensitive:
+>
+> Using arduino-cli, programs are case-sensitive. On some platforms, computer programs are not case sensitive: it doesn't matter whether letters are capital or lower case. But using arduino-cli, case matters.
+{: .callout}
+
+
+Once you've saved the sketch, you can try to compile the program.
+
+~~~
+$ arduino-cli -b=arduino:avr:uno compile
+~~~
+{: .language-bash}
+
+You should get a message with info about how much memory the sketch will require. Or an error message with information for debugging the problem.
+
+Once you successfully compile the program, you can upload it to the Arduino.
+
+~~~
+$ arduino-cli -b arduino:avr:uno -p /dev/ttyACM0 upload
+~~~
+{: .language-bash}
+
+You should see the LEDs on the Arduino blink rapidly for a moment and then one LED will begin blink regularly.
+
+How long is the LED on? How long is it off.
+
+Try changing the delays in the program.
+
+{% include links.md %}
