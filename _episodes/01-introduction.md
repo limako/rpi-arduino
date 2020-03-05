@@ -26,4 +26,8 @@ Along the sides of an Arduino are two rows of sockets that can be used to connec
 
 You should connect your Arduino to your Raspberry Pi and notice that some LEDs light to show that it is powered. The rest of this guide will assume you have an Arduino attached to a Raspberry Pi via USB.
 
+<a href="{{ page.root }}/fig/pi_and_arduino_med.jpg">
+  <img src="{{ page.root }}/fig/pi_and_arduino_full.jpg" alt="Formatting Rules" />
+</a>
+
 {% include links.md %}
