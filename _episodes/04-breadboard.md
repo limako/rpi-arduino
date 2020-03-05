@@ -47,13 +47,25 @@ Replace LED_BUILTIN in the sketch above with 13. The built-in LED on the board i
 
 Next we will attach an LED on the breadboard to pin 13.
 
+<a href="{{ page.root }}/fig/blink_parts_med.jpg">
+  <img src="{{ page.root }}/fig/blink_parts_full.jpg" alt="Parts to connect LED to pin 13" />
+</a>
+
 A breadboard has conductive elements that allow you connect components together using jumpers -- small wires with connectors at each end. The typical breadboard that comes with an Arduino kit has two halves The red and blue lines represent conductors that run the length of the board. The other conductors run horizontally toward the middle, but don't connect across the middle.
+
+<a href="{{ page.root }}/fig/breadboard_med.jpg">
+  <img src="{{ page.root }}/fig/breadboard_full.jpg" alt="Breadboard" />
+</a>
 
 Place the LED so that its two connectors are attached to adjacent conductors on the breadboard (separate horizontal lines). Note that the two leads on the LED are different lengths. The longer lead is the one that should be connected to pin 13. Place a jumper from another socket on the breadboard and connect it to pin 13. But to complete the circuit, we need to connect the other lead to ground.
 
 If you connect a jumper from one of the ground pins on the Arduino to the lengthwise conductor next to the blue line, we can use that to ground any of the circuits we build on the breadboard.
 
 Finally, LEDs only need a tiny amount of electricity to light up and can be damaged by running too much electricity through them. For this reason, we will complete the circuit by using a resistor. In this case, we'll use a 330ohm resistor. Put one end of the resistor in the same row of conductors as the short lead on the LED and the other end in the grounded conductor. If all of your connections are correct, the LED on the breadboard should blink at the same time as the built-in LED.
+
+<a href="{{ page.root }}/fig/blink_med.jpg">
+  <img src="{{ page.root }}/fig/blink_full.jpg" alt="LED on breadboard connected to pin 13" />
+</a>
 
 For portability, you can define a variable you can set to represent the pin you're using to light the LED. Try moving the positive connect to the LED to a different pin and define a variable to represent that pin in all of the places where it is referenced.
 

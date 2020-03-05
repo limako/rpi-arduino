@@ -13,6 +13,10 @@ The Arduino is a hardware platform that has an open specification that has been 
 
 There are many many versions of Arduino devices that have been developed for particular applications, but this guide will assume you're using an Arduino Uno, which is a basic device that works well for prototyping.
 
+<a href="{{ page.root }}/fig/arduino_med.jpg">
+  <img src="{{ page.root }}/fig/arduino_full.jpg" alt="Formatting Rules" />
+</a>
+
 A program for an Arduino is called a "sketch" and is written in a subset of the C++ programming language.
 
 Arduinos only do two things. When they start, they run a function called "setup" that is executed only once. Then they run a function called "loop" which runs over and over again forever. That's it.
@@ -24,7 +28,7 @@ Along the sides of an Arduino are two rows of sockets that can be used to connec
 > Although Arduinos are generally forgiving, it's possible to damage the electronics by shorting connections among pins. Use guidance when making connections and double check everything before plugging things in.
 {: .callout}
 
-You should connect your Arduino to your Raspberry Pi and notice that some LEDs light to show that it is powered. The rest of this guide will assume you have an Arduino attached to a Raspberry Pi via USB.
+You should connect your Arduino to your Raspberry Pi and notice that an LED is lit to show that it is powered. The rest of this guide will assume you have an Arduino attached to a Raspberry Pi via USB.
 
 <a href="{{ page.root }}/fig/pi_and_arduino_med.jpg">
   <img src="{{ page.root }}/fig/pi_and_arduino_full.jpg" alt="Formatting Rules" />
