@@ -17,11 +17,13 @@ A program for an Arduino is called a "sketch" and is written in a subset of the 
 
 Arduinos only do two things. When they start, they run a function called "setup" that is executed only once. Then they run a function called "loop" which runs over and over again forever. That's it.
 
-Arduinos have rows of sockets that can be used to connect with little jumpers to a breadboard.
+Along the sides of an Arduino are two rows of sockets that can be used to connect with little wires, or "jumpers", to a breadboard.
 
 > ## Important:
 >
 > Although Arduinos are generally forgiving, it's possible to damage the electronics by shorting connections among pins. Use guidance when making connections and double check everything before plugging things in.
 {: .callout}
+
+You should connect your Arduino to your Raspberry Pi and notice that some LEDs light to show that it is powered. The rest of this guide will assume you have an Arduino attached to a Raspberry Pi via USB.
 
 {% include links.md %}

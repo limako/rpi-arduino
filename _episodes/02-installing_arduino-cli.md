@@ -40,7 +40,14 @@ $ arduino-cli
 ~~~
 {: .language-bash}
 
-It should emit a "help" message.
+It should emit a "help" message that shows the available options and commands. We should be able to use the arduino-cli program to see the Arduino board you have connected to the Pi.
+
+~~~
+$ arduino-cli board list
+~~~
+{: .language-bash}
+
+Assuming it finds a board it recognizes, you should see the type of board and the serial port its on. Using this, you can construct the commands you need to compile and upload a program.
 
 
 
