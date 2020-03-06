@@ -68,6 +68,7 @@ You should see the LEDs on the Arduino blink rapidly for a moment and then one L
 > to save keystrokes. You can add these to a .bash_aliases files.
 >
 > alias compile='arduino-cli -b=arduino:avr:uno compile'
+>
 > alias upload='arduino-cli -b arduino:avr:uno -p /dev/ttyACM0 upload'
 {: .callout}
 

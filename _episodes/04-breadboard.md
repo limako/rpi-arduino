@@ -67,6 +67,12 @@ Finally, LEDs only need a tiny amount of electricity to light up and can be dama
   <img src="{{ page.root }}/fig/blink_full.jpg" alt="LED on breadboard connected to pin 13" />
 </a>
 
-For portability, you can define a variable you can set to represent the pin you're using to light the LED. Try moving the positive connect to the LED to a different pin and define a variable to represent that pin in all of the places where it is referenced.
+For portability, you can define a variable you can set to represent the pin you're using to light the LED. Then you only need to one change to switch to a different pin.
+
+> ## Try this:
+>
+> Try moving the positive connect to the LED to a different pin and define a variable to represent that pin in all of the places where it is referenced.
+{: .challenge}
+
 
 {% include links.md %}
