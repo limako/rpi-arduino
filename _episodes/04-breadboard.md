@@ -7,7 +7,7 @@ questions:
 - "How are a breadboard's conductors organized?"
 - "How can you use a breadboard to connect devices to the Arduino?"
 objectives:
-- "Understand how sockets are connected on a breaboard."
+- "Understand how sockets are connected on a breadboard."
 - "Understand how to program pins on an Arduino for OUTPUT."
 - "Use Pulse Width Modulation to simulate an analog OUTPUT."
 keypoints:
