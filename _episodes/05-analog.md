@@ -47,6 +47,10 @@ void loop() {
 
 Why is one variable (led) defined above the setup function and another (pot) defined inside the loop function?
 
-What do you think will happen if you reverse which side is ground and which side is power? Make a prediction and try it out.
+> ## Try this:
+>
+> What do you think will happen if you reverse which side is ground and which side is power? Make a prediction and try it out.
+{: .challenge}
+
 
 {% include links.md %}

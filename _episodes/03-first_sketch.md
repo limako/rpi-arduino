@@ -12,7 +12,7 @@ keypoints:
 
 The classic "hello world" program in the Arduino world is "blink".
 
-This command will create a new sketch.
+This command will create a new sketch:
 
 ~~~
 $ arduino-cli sketch new blink
@@ -57,7 +57,7 @@ $ arduino-cli -b arduino:avr:uno -p /dev/ttyACM0 upload
 ~~~
 {: .language-bash}
 
-You should see the LEDs on the Arduino blink rapidly for a moment and then one LED will begin blink regularly.
+You should see the LEDs on the Arduino blink rapidly for a moment and then one LED will begin to blink regularly.
 
 > ## Working efficiently:
 > If you have to type out these entire commands each time you do anything,
@@ -67,13 +67,19 @@ You should see the LEDs on the Arduino blink rapidly for a moment and then one L
 > You can also create aliases that make short versions of the commands
 > to save keystrokes. You can add these to a .bash_aliases files.
 >
+> ~~~
 > alias compile='arduino-cli -b=arduino:avr:uno compile'
->
 > alias upload='arduino-cli -b arduino:avr:uno -p /dev/ttyACM0 upload'
+> ~~~
+> {: .source}
 {: .callout}
 
-How long is the LED on? How long is it off.
+> ## Question
+> How long is the LED on? How long is it off. What are the units?
+{: .Discussion}
 
-Try changing the delays in the program.
+> ## Try This
+> Try changing the delays in the program. Try programming a pattern, like S-O-S.
+{: .challenge}
 
 {% include links.md %}
