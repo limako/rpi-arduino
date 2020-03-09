@@ -1,7 +1,7 @@
 ---
 title: "First Sketch"
-teaching: 0
-exercises: 0
+teaching: 20
+exercises: 10
 questions:
 - "How do you program the Arduino?"
 - "What is the structure of an Arduino program?"
@@ -10,7 +10,7 @@ objectives:
 - "Explore the structure of a 'sketch' or Arduino program."
 - "Configure the settings necessary to program an Arduino."
 keypoints:
-- "Arduino programs are called 'sketches' with a program file inside a directory.""
+- "Arduino programs are called 'sketches' with a program file inside a directory."
 - "Arduino programs have two functions: a 'setup' function that is run once, and a 'loop' function that runs forever."
 ---
 
