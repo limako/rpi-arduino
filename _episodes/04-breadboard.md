@@ -1,7 +1,7 @@
 ---
 title: "Using the Breadboard"
 teaching: 30
-exercises: 2
+exercises: 10
 questions:
 - "What is a breadboard?"
 - "How are a breadboard's conductors organized?"

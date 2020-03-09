@@ -1,7 +1,7 @@
 ---
 title: "Using Serial Connections"
 teaching: 30
-exercises: 1
+exercises: 10
 questions:
 - "How can Arduino programs use the serial interace?"
 objectives:

@@ -1,7 +1,7 @@
 ---
 title: "Using Digital and Analog Pins"
 teaching: 30
-exercises: 1
+exercises: 10
 questions:
 - "How can the Arduino receive input via pins?"
 objectives:
