@@ -3,7 +3,8 @@ title: "First Sketch"
 teaching: 0
 exercises: 0
 questions:
-- "Key question (FIXME)"
+- "How do you program the Arduino?"
+- "What is the structure of an Arduino program?"
 objectives:
 - "First learning objective. (FIXME)"
 keypoints:
@@ -57,13 +58,13 @@ $ arduino-cli -b arduino:avr:uno -p /dev/ttyACM0 upload
 ~~~
 {: .language-bash}
 
-You should see the LEDs on the Arduino blink rapidly for a moment and then one LED will begin to blink regularly.
-
 > ## Working efficiently:
+>
 > If you have to type out these entire commands each time you do anything,
 > it would be a lot of effort. Luckily you can use the shell history to reuse
 > commands. It's perhaps useful to open two terminal windows:
-> one where you are editing your sketch and another where you compile
+> one where you are editing your sketch and another where you compile and upload the sketch.
+>
 > You can also create aliases that make short versions of the commands
 > to save keystrokes. You can add these to a .bash_aliases files.
 >
@@ -74,12 +75,17 @@ You should see the LEDs on the Arduino blink rapidly for a moment and then one L
 > {: .source}
 {: .callout}
 
-> ## Question
-> How long is the LED on? How long is it off. What are the units?
+While uploading, you should see the LEDs on the Arduino blink rapidly for a moment and then one LED will begin to blink regularly.
+
+> ## Questions
+> How long is the LED on? How long is it off. What are the units? 
 {: .Discussion}
 
+By changing the delays, you can vary how long the LED is on or off.
+
 > ## Try This
-> Try changing the delays in the program. Try programming a pattern, like S-O-S.
+>
+> Try programming a pattern, like S-O-S in Morse code (". . . — — — . . ."). Consider using a "for" loop to simplify coding.
 {: .challenge}
 
 {% include links.md %}

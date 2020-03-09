@@ -1,7 +1,7 @@
 ---
 title: "Using Serial Connections"
 teaching: 30
-exercises: 0
+exercises: 1
 questions:
 - "How can Arduino programs use the serial interace?"
 objectives:
@@ -51,7 +51,7 @@ You should see a series of values received. As long as "screen" has the serial p
 > How variable are the readings? What is the full range of the potentiometer?
 {: .discussion}
 
-Everything you type, gets sent to the Arduino, with one exception: when you type ^A (while pressing the control key, type "a"), screen will listen for you to type a command. A backslash ("\") will get screen to ask you if you want to" "Really quit and kill all your windows [y/n]". Press "y" to close the connection.
+Everything you type, gets sent to the Arduino, with one exception: when you type <kbd>Ctrl</kbd>+<kbd>A</kbd> (while pressing the control key, type "a"), screen will listen for you to type a command. A backslash (<kbd>\</kbd>) will get screen to ask you if you want to" "Really quit and kill all your windows [y/n]". Press <kbd>Y</kbd> to close the connection.
 
 A useful way to send data is as "comma separated values". An easy way to format the output is to use the "Serial.print" command to output individual elements on the line (values or commas) and then use "Serial.println" for the last element, which will send the line ending.
 
@@ -142,7 +142,7 @@ void loop() {
 
 > ## Try this:
 >
-> Can you add code to output an invitation to input the number of times to loop?
+> Can you add code to output an message telling the user to input the number of times to loop?
 {: .challenge}
 
 {% include links.md %}

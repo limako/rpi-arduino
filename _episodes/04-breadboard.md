@@ -14,7 +14,9 @@ We're going to start with the blink program we were started with.
 
 > ## Code Reuse:
 >
-> Get used to starting with working code and adapting it to new purposes. It's much easier to begin with something that part of what you want and simply revising or extending it to do what you want.
+> Get used to starting with working code and adapting it to new purposes.
+> It's much easier to begin with something that part of what you want
+> and simply revising or extending it to do what you want.
 {: .callout}
 
 You can either create a new sketch, but you can also go the parent directory that contains the folder with your blink sketch and copy the whole directory. Then rename the sketch inside to match the new name.
@@ -71,8 +73,36 @@ For portability, you can define a variable you can set to represent the pin you'
 
 > ## Try this:
 >
-> Try moving the positive connect to the LED to a different pin and define a variable to represent that pin in all of the places where it is referenced.
+> Try moving the positive connection to the LED to pin 6 and define a variable to represent that pin in all of the places where it is referenced.
 {: .challenge}
+
+Digital pins (and LEDS) are either off or on, but some digital pins
+(e.g. 3, 5, 6, 9, 10
+and 11) can simulate analog OUTPUT through pulse width modulation (PWM):
+that is, they can rapidly turn on and off so that the proportion of the
+time the pin is HIGH can be varied.
+
+~~~
+int led=6;
+void setup() {
+  pinMode(led, OUTPUT);
+}
+
+void loop() {
+  // gradually increase time pin is HIGH
+  for(int i=0; i<255; i++){
+    analogWrite(led, i);
+    delay(5);
+  }
+  // gradually decrease time pin is HIGH
+  for(int i=255; i>0; i--){
+    analogWrite(led, i);
+    delay(5);
+  }
+}
+~~~
+{: .source}
+
 
 
 {% include links.md %}

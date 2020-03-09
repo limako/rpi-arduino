@@ -11,7 +11,9 @@ A brief guide to programming the Arduino via the Raspberry Pi.
 
 > ## Prerequisites
 >
-> The setup includes the materials needed. The guide assumes you are familiar with using the bash shell and can edit files via command line on the Raspberry Pi.
+> The setup includes the materials needed. The guide assumes you are
+> familiar with using the bash shell and can edit files via command
+> line on the Raspberry Pi.
 {: .prereq}
 
 {% include links.md %}

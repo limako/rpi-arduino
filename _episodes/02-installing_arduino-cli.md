@@ -58,4 +58,5 @@ $ arduino-cli config init
 
 This command will save a "arduino-cli.yaml" file inside an invisible ".arduino15 directory inside your home directory. This file includes a place where you can specify additional URLs for the "board manager" that will ensure the Arduino can recognize and interact with your particular board.
 
+
 {% include links.md %}
