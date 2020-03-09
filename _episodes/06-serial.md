@@ -1,18 +1,21 @@
 ---
 title: "Using Serial Connections"
-teaching: 0
+teaching: 30
 exercises: 0
 questions:
-- "Key question (FIXME)"
+- "How can Arduino programs use the serial interace?"
 objectives:
-- "First learning objective. (FIXME)"
+- "Receive data from the Arduino."
+- "Send data to the Arduino."
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "A serial connection is birectional."
+- "Serial connections exchange individual bytes."
+- "Higher-level functions can help parse serial input."
 ---
 
-The Arduino uses a serial connection to receive the uploaded programs from the Raspberry Pi. But it can also exchange data via the serial connection while programs are running.
+The Arduino uses a serial connection to receive the uploaded programs from the Raspberry Pi. But it can also exchange data via the serial connection while programs are running. The basic serial functions are [well documented](https://www.arduino.cc/reference/en/language/functions/communication/serial/).
 
-The connection is bi-directional, so you can exchange data from the Arduino -- or send information to it.  By adding just a couple of lines, we can see what the potentiometer is actually set to.
+The serial connection is bi-directional, so you can both receive data from the Arduino and send information to it.  By adding just a couple of lines, we can see what the potentiometer is actually set to.
 
 ~~~
 int led = 13;
@@ -79,7 +82,7 @@ void loop() {
 ~~~
 {: .language-arduino}
 
-
+You should now see pairs of values. If you rotate the potentiometer between readings, you should see the two values change independently.
 
 ~~~
 int led = 13;
@@ -139,7 +142,7 @@ void loop() {
 
 > ## Try this:
 >
-> Can you add code to output an invitation to input the number of times to loop? 
+> Can you add code to output an invitation to input the number of times to loop?
 {: .challenge}
 
 {% include links.md %}

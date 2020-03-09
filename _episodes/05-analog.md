@@ -1,14 +1,45 @@
 ---
-title: "Using Analog Pins"
+title: "Using Digital and Analog Pins"
 teaching: 0
 exercises: 0
 questions:
-- "Key question (FIXME)"
+- "How can the Arduino receive input via pins?"
 objectives:
-- "First learning objective. (FIXME)"
+- "Digital pins can be configured digital output or input."
+- "Only analog pins can be configured analog input."
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "Digital pins are either HIGH or LOW while analog pins reflect a range from 0-1023."
 ---
+In addition to using pins for output, they can also detect input. Digital pins (0-13), like with output, can only detect HIGH or LOW.
+
+~~~
+int led=13;
+// attach a wire to pin 3
+int wire=3;
+void setup() {
+  pinMode(led, OUTPUT);
+  // configure the pin for INPUT
+  pinMode(wire, INPUT);
+}
+
+void loop() {
+  // the pin reads HIGH, blink the LED.
+  if (digitalRead(wire)) {
+    digitalWrite(led, HIGH);
+    delay(500);
+    digitalWrite(led, LOW);
+    delay(500);
+  }
+}
+~~~
+{: .language-arduino}
+
+> ## Try this:
+>
+> Connect the jumper in pin 3 to ground. Then connect to 3.3v (the
+> red conductor on the breadboard or one of the 3.3v pins on the
+> Arduino.) What happens if you don't plug anything into pin 3? 
+{: .challenge}
 
 The Arduino Uno includes 6 pins that can accept "analog" input. These pins can measure the resistance between the pin and ground, perform an "analog to digital" conversion, and will output an integer value between 0 and 1023. Many sensors work using this principal but we can start by using a potentiometer.
 

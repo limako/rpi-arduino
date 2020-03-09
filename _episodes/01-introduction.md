@@ -21,7 +21,7 @@ A program for an Arduino is called a "sketch" and is written in a subset of the 
 
 Arduinos only do two things. When they start, they run a function called "setup" that is executed only once. Then they run a function called "loop" which runs over and over again forever. That's it.
 
-Along the sides of an Arduino are two rows of sockets that can be used to connect with little wires, or "jumpers", to a breadboard.
+Along the sides of an Arduino are sockets that can be used to connect with little wires, or "jumpers", to a breadboard. (Or directly to a component).
 
 > ## Important:
 >
