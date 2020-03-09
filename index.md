@@ -3,11 +3,7 @@ layout: lesson
 root: .  # Is the only page that doesn't follow the pattern /:path/index.html
 permalink: index.html  # Is the only page that doesn't follow the pattern /:path/index.html
 ---
-A brief guide to programming the Arduino via the Raspberry Pi.
-
-<!-- this is an html comment -->
-
-{% comment %} This is a comment in Liquid {% endcomment %}
+A brief guide to programming the Arduino via the Raspberry Pi. The focus of this guide is getting started writing code in the context of working with sensors to collect data.
 
 > ## Prerequisites
 >

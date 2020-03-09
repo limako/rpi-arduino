@@ -8,6 +8,8 @@ objectives:
 - "Install and configure arduino-cli."
 keypoints:
 - "There are graphical and command-line packages to program Arduinos"
+- "Arduino software uses a serial connection to program the device."
+
 ---
 Until recently, the best way to program an Arduino was to use an
 Integrated Development Environment (IDE). The IDE provides a graphical interface to write programs, compile them, and upload them to the Arduino.

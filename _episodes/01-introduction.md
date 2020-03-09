@@ -1,13 +1,17 @@
 ---
 title: "Introduction"
-teaching: 0
+teaching: 15
 exercises: 0
 questions:
 - "What is the Arduino platform?"
+- "Why do we use the Arduino platform?"
 objectives:
-- "First learning objective. (FIXME)"
+- "Understand what Arduinos can do."
+- "Understand when Arduinos are a good choice."
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "Arduinos are very simple devices for physical computing.""
+- "Arduinos are at the center of a universe of resources for making projects."
+
 ---
 The Arduino is a hardware platform that has an open specification that has been widely deployed for prototyping embedded computing and interfacing with sensors and devices. As with a model system in biology, the main advantage of using it is the vast library of existing resources you can draw from for building your project.
 

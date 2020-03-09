@@ -6,9 +6,12 @@ questions:
 - "How do you program the Arduino?"
 - "What is the structure of an Arduino program?"
 objectives:
-- "First learning objective. (FIXME)"
+- "Install software for programming the Arduino."
+- "Explore the structure of a 'sketch' or Arduino program."
+- "Configure the settings necessary to program an Arduino."
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "Arduino programs are called 'sketches' with a program file inside a directory.""
+- "Arduino programs have two functions: a 'setup' function that is run once, and a 'loop' function that runs forever."
 ---
 
 The classic "hello world" program in the Arduino world is "blink".
@@ -78,7 +81,7 @@ $ arduino-cli -b arduino:avr:uno -p /dev/ttyACM0 upload
 While uploading, you should see the LEDs on the Arduino blink rapidly for a moment and then one LED will begin to blink regularly.
 
 > ## Questions
-> How long is the LED on? How long is it off. What are the units? 
+> How long is the LED on? How long is it off. What are the units?
 {: .Discussion}
 
 By changing the delays, you can vary how long the LED is on or off.

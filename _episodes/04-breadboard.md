@@ -1,16 +1,20 @@
 ---
 title: "Using the Breadboard"
-teaching: 0
-exercises: 0
+teaching: 30
+exercises: 2
 questions:
-- "Key question (FIXME)"
+- "What is a breadboard?"
+- "How are a breadboard's conductors organized?"
+- "How can you use a breadboard to connect devices to the Arduino?"
 objectives:
-- "First learning objective. (FIXME)"
+- "Understand how sockets are connected on a breaboard."
+- "Understand how to program pins on an Arduino for OUTPUT."
+- "Use Pulse Width Modulation to simulate an analog OUTPUT."
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- ""
 ---
 
-We're going to start with the blink program we were started with.
+Let's go back to the blink program we started with -- or you can continue with the sketch as you modified in the previous episode.
 
 > ## Code Reuse:
 >
@@ -103,6 +107,9 @@ void loop() {
 ~~~
 {: .source}
 
-
+> ## Try this:
+>
+> Try moving the positive connection to the LED to pin 6 and define a variable to represent that pin in all of the places where it is referenced.
+{: .challenge}
 
 {% include links.md %}
