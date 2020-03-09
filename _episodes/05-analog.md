@@ -33,7 +33,7 @@ void loop() {
   }
 }
 ~~~
-{: .language-arduino}
+{: .source}
 
 > ## Try this:
 >
@@ -75,7 +75,7 @@ void loop() {
   delay(pot);
 }
 ~~~
-{: .language-arduino}
+{: .source}
 
 Why is one variable (led) defined above the setup function and another (pot) defined inside the loop function?
 

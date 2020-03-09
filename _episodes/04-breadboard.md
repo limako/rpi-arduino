@@ -47,7 +47,7 @@ void loop() {
   delay(500);
 }
 ~~~
-{: .language-arduino}
+{: .source}
 
 Replace LED_BUILTIN in the sketch above with 13. The built-in LED on the board is wired to pin 13 on the Arduino. Note that the LED continues to blink after compiling and uploading the sketch.
 

@@ -36,7 +36,7 @@ void loop() {
   delay(pot);
 }
 ~~~
-{: .language-arduino}
+{: .source}
 
 To see the readings on the Pi, we can use the "screen" command which can communicate via the serial ports.
 
@@ -80,7 +80,7 @@ void loop() {
   delay(pot);
 }
 ~~~
-{: .language-arduino}
+{: .source}
 
 You should now see pairs of values. If you rotate the potentiometer between readings, you should see the two values change independently.
 
@@ -109,7 +109,7 @@ void loop() {
   delay(pot);
 }
 ~~~
-{: .language-arduino}
+{: .source}
 
 The Arduino Serial library can read data submitted byte-by-byte, one character at a time, but it also includes functions that watch for integers or floating-point values. We can use one to control how many times to blink.
 
@@ -138,7 +138,7 @@ void loop() {
   }
 }
 ~~~
-{: .language-arduino}
+{: .source}
 
 > ## Try this:
 >

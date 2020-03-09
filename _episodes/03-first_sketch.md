@@ -37,7 +37,7 @@ void loop() {
   delay(500);
 }
 ~~~
-{: .language-arduino}
+{: .source}
 
 > ## Case Sensitive:
 >
