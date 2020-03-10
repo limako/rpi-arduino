@@ -50,7 +50,7 @@ void loop() {
 ~~~
 {: .source}
 
-If you try to compile without installing the library, compilation will fail. Install the library and try again.
+If you try to compile without installing the library, compilation will fail. Install the library and compile again.
 
 > ## Question
 > Why might this function be useful? How you imagine the function is operationalized? Are there any limitations to this approach?
