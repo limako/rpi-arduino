@@ -1,18 +1,59 @@
 ---
-title: "Using Serial Connections"
-teaching: 0
-exercises: 0
+title: "Using Arduino Libraries"
+teaching: 20
+exercises: 10
 questions:
-- "Key question (FIXME)"
+- "How can Arduino programming be extended?"
 objectives:
-- "First learning objective. (FIXME)"
+- "Don't re-invent the wheel."
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "Libraries can provide additional functionality, especially for hardware, but also for functionality."
 ---
 
-The Arduino uses a serial connection to receive the uploaded programs from the Raspberry Pi. But it can also exchange data via the serial connection while programs are running.
+The Arduino programming language provides a lot of low-level functionality, but there are many libraries that can provide higher-level functions that can simplify interacting with more specialized hardware or information.
 
+It's feasible to search for libraries using arduino-cli
 
+~~~
+$ arduino-cli lib search [keyword]
+~~~
+{: .language-bash}
 
+But you can also [browse the libraries](https://www.arduinolibraries.info/).
+
+When you've identified a library you want to use, you can install it from the command line:
+
+~~~
+$ arduino-cli lib search [keyword]
+~~~
+{: .language-bash}
+
+You can reference a library you want to use with an "#include" statement in your code, and then use the defined elements it provides. In this example, we're using the TimedBlink library, which keeps track of when a pin should be turned on and off.
+
+~~~
+// include the library
+#include <TimedBlink.h>
+int led=6;
+
+TimedBlink monitor(led);
+
+void setup() {
+  pinMode(led, OUTPUT);
+  // Configure the function with times to stay on and off
+  monitor.blink(500,500);
+}
+
+void loop() {
+  // call frequently to blink at scheduled times.
+  monitor.blink();
+}
+~~~
+{: .source}
+
+If you try to compile without installing the library, compilation will fail. Install the library and try again.
+
+> ## Question
+> Why might this function be useful? How you imagine the function is operationalized? Are there any limitations to this approach?
+{: .discussion}
 
 {% include links.md %}
