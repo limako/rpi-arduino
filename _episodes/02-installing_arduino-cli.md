@@ -16,7 +16,7 @@ Integrated Development Environment (IDE). The IDE provides a graphical interface
 
 More recently, a command-line application for programming
 Arduinos and similar devices has been developed. The [arduino-cli project is hosted at
-github](https://github.com/arduino/arduino-cli)
+github](https://github.com/arduino/arduino-cli) and includes [documentation](https://arduino.github.io/arduino-cli/).
 
 You can download an install script (written in bash) and pipe it directly to a script to install it.
 
@@ -50,15 +50,27 @@ $ arduino-cli board list
 ~~~
 {: .language-bash}
 
-Assuming it finds a board it recognizes, you should see the type of board and the serial port it's on. Using this, you can construct the commands you need to compile and upload a program.
+Assuming it finds a board it recognizes, you should see the serial port it's on, the name of the board, the Fully Qualified Board Name (FQBN), and the core. You may need to install the core.  You can check which cores are installed:
+
+~~~
+$ arduino-cli core list
+~~~
+{: .language-bash}
+
+And then, if it's not in the list, install the required core:
+
+~~~
+$ arduino-cli core install [core]
+~~~
+{: .language-bash}
 
 If you're using some other type of Arduino-like board, you may need to do additional configuration of the arduino-cli program.
+
 ~~~
 $ arduino-cli config init
 ~~~
 {: .language-bash}
 
-This command will save a "arduino-cli.yaml" file inside an invisible ".arduino15 directory inside your home directory. This file includes a place where you can specify additional URLs for the "board manager" that will ensure the Arduino can recognize and interact with your particular board.
-
+This command will save a "arduino-cli.yaml" file inside an invisible ".arduino15 directory inside your home directory. This file includes a place where you can specify additional URLs for the "board manager" that will ensure the Arduino can recognize and download the necessary core to work with your particular board.
 
 {% include links.md %}
