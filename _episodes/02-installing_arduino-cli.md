@@ -70,7 +70,7 @@ Port         Type              Board Name  FQBN            Core
 /dev/ttyACM0 Serial Port (USB) Arduino Uno arduino:avr:uno arduino:avr
 /dev/ttyAMA0 Serial Port       Unknown                                
 ~~~
-{: output}
+{: .output}
 
 You may need to install the core.  You can check which cores are installed:
 

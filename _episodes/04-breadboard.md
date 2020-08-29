@@ -19,7 +19,7 @@ Let's go back to the blink program we started with -- or you can continue with t
 > ## Code Reuse:
 >
 > Get used to starting with working code and adapting it to new purposes.
-> It's much easier to begin with something that part of what you want
+> It's much easier to begin with something that does part of what you want
 > and simply revising or extending it to do what you want.
 {: .callout}
 
