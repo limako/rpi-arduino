@@ -10,16 +10,16 @@ keypoints:
 - "Libraries can provide additional functionality, especially for hardware, but also for functionality."
 ---
 
-The Arduino programming language provides a lot of low-level functionality, but there are many libraries that can provide higher-level functions that can simplify interacting with more specialized hardware or information.
+The Arduino programming language provides a lot of basic, low-level functionality, but there are many libraries that can provide higher-level functions that can simplify interacting with specialized hardware or information.
 
-It's feasible to search for libraries using arduino-cli
+It's feasible to search for libraries using arduino-cli directly
 
 ~~~
 $ arduino-cli lib search [keyword]
 ~~~
 {: .language-bash}
 
-But you can also [browse the libraries](https://www.arduinolibraries.info/).
+But you can also [browse the libraries](https://www.arduinolibraries.info/) to more readily see what's available.
 
 When you've identified a library you want to use, you can install it from the command line:
 
@@ -55,5 +55,7 @@ If you try to compile without installing the library, compilation will fail. Ins
 > ## Question
 > Why might this function be useful? How you imagine the function is operationalized? Are there any limitations to this approach?
 {: .discussion}
+
+Finally, under some circumstances, you might want to [create a library of your own](https://www.arduino.cc/en/Hacking/LibraryTutorial).
 
 {% include links.md %}
