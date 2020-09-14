@@ -8,7 +8,7 @@ questions:
 objectives:
 - "Use git for version control with Arduino sketches."
 keypoints:
-- "."
+- "Maintain all your programming in version control."
 ---
 
 You should consider using version control for any serious programming you do. Here is a quick set up steps to help you create a repo and maintain a repository with an Arduino program.
@@ -20,22 +20,29 @@ $ sudo apt-get install hub
 ~~~
 {: .language-bash}
 
-With hub you can interact with github and easily create a new repository:
+Create a directory Once the repository exists you can push changes to the repository online. Here are a series of commands that assume you have an ssh key set up with github.
 
 ~~~
-$ hub create [sketch]
+$ mkdir [project]
+$ cd [project]
+$ touch README.md
+$ git init
+$ git add *
+$ git commit -m "First commit."
 ~~~
 {: .language-bash}
 
-Once the repository exists you can push changes to the repository online. Here are a series of commands that assume you have an ssh key set up with github.
+With hub you can interact with github and easily create a new repository:
 
 ~~~
-$ touch README.md
-$ git init
-$ git add README.md
-$ git add [sketch].ino
-$ git commit -m "First commit."
-$ git remote add origin git@github.com:[username]/[sketch].git
+$ hub create
+~~~
+{: .language-bash}
+
+You should now be able to push your changes to github.
+
+~~~
+$ git remote add origin git@github.com:[username]/[project].git
 $ git push -u origin master
 ~~~
 {: .language-bash}
