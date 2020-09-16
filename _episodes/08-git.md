@@ -104,7 +104,7 @@ For some Arduino programs, you may need to "add" other files, but avoid includin
 ~~~
 {: .source}
 
-Then you can use
+Then you can use the following commands to push changes to your github repository.
 ~~~
 $ git add *
 $ git commit -m "informative message"
