@@ -96,7 +96,7 @@ $ git push -u origin master
 ~~~
 {: .language-bash}
 
-For some Arduino programs, you may need to "add" other files, but avoid including the compiled files (.elf and .hex). Create a ".gitignore" file that includes these patterns to avoid adding them by mistake.
+For some Arduino programs, you may need to "add" other files, but avoid including the compiled files (.elf and .hex). Create a ".gitignore" file (e.g. "nano .gitignore") an insert these patterns to avoid adding them by mistake. 
 
 ~~~
 *.elf
