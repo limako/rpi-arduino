@@ -59,6 +59,7 @@ If your user.email and user.name are not set, you can set them:
 ~~~
 $ git config --global user.email "you@example.com"
 $ git config --global user.name "Your Name"
+$ git config --global init.defaultBranch main
 ~~~
 {: .language-bash}
 
@@ -92,7 +93,7 @@ You should now be able to push your changes to github.
 
 ~~~
 $ git remote add origin git@github.com:USERNAME/projectname.git
-$ git push -u origin master
+$ git push -u origin main
 ~~~
 {: .language-bash}
 

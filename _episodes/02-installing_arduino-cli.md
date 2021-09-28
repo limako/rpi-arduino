@@ -79,7 +79,7 @@ $ arduino-cli core list
 ~~~
 {: .language-bash}
 
-And then, if it's not in the list, install the required core:
+And then, if it's not in the list, install the required core. (Note: Replace "[core]" with the one listed from the output above, e.g. "arduino:avr")
 
 ~~~
 $ arduino-cli core install [core]
