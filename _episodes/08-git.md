@@ -89,6 +89,10 @@ $ hub create
 ~~~
 {: .language-bash}
 
+Or you should be be able to. Unfortunately, you currently may need to create a
+"personal access token" for hub via Settings -> Developer Settings -> Personal Access Tokens. Once you create
+a token, you can copy it and then paste it in where you get asked for a password. 
+
 You should now be able to push your changes to github.
 
 ~~~
