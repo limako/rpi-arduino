@@ -11,7 +11,9 @@ objectives:
 - "Understand how to program pins on an Arduino for OUTPUT."
 - "Use Pulse Width Modulation to simulate an analog OUTPUT."
 keypoints:
-- ""
+- "Breadboards allow for complex, temporary connections."
+- "Pins can be turned ON or OFF."
+- "Pulse Width Modulation turns pins on and off really fast."
 ---
 
 Let's go back to the blink program we started with -- or you can continue with the sketch as you modified in the previous episode.

@@ -24,7 +24,7 @@ But you can also [browse the libraries](https://www.arduinolibraries.info/) to m
 When you've identified a library you want to use, you can install it from the command line:
 
 ~~~
-$ arduino-cli lib install [name_of_LIbrary]
+$ arduino-cli lib install [name_of_library]
 ~~~
 {: .language-bash}
 
