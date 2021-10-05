@@ -24,11 +24,11 @@ But you can also [browse the libraries](https://www.arduinolibraries.info/) to m
 When you've identified a library you want to use, you can install it from the command line:
 
 ~~~
-$ arduino-cli lib search [keyword]
+$ arduino-cli lib install [name_of_LIbrary]
 ~~~
 {: .language-bash}
 
-You can reference a library you want to use with an "#include" statement in your code, and then use the defined elements it provides. In this example, we're using the TimedBlink library, which keeps track of when a pin should be turned on and off.
+When programming, you reference a library you want to use with an "#include" statement in your code, and then use the defined elements it provides. In this example, we're using the TimedBlink library, which keeps track of when a pin should be turned on and off.
 
 ~~~
 // include the library
