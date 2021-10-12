@@ -14,7 +14,7 @@ keypoints:
 In addition to using pins for output, they can also detect input. Digital pins (0-13), like with output, can only detect HIGH or LOW.
 
 ~~~
-int led=13;
+int led=6;
 // attach a wire to pin 3
 int wire=3;
 void setup() {
@@ -61,7 +61,7 @@ Connect one side of the potentiometer to ground and the other side to 3.3V. (Not
 This sketch is just the blink-two sketch from before, with a variable standing in for the LED pin and another variable (pot) defined to receive the value from the analog pin.
 
 ~~~
-int led = 13;
+int led = 6;
 void setup() {
  pinMode(led, OUTPUT);
 }
