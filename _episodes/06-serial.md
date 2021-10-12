@@ -18,7 +18,7 @@ The Arduino uses a serial connection to receive the uploaded programs from the R
 The serial connection is bi-directional, so you can both receive data from the Arduino and send information to it.  By adding just a couple of lines, we can see what the potentiometer is actually set to.
 
 ~~~
-int led = 13;
+int led = 6;
 void setup() {
  pinMode(led, OUTPUT);
  // This turns on the serial connection
@@ -56,7 +56,7 @@ Everything you type, gets sent to the Arduino, with one exception: when you type
 A useful way to send data is as "comma separated values". An easy way to format the output is to use the "Serial.print" command to output individual elements on the line (values or commas) and then use "Serial.println" for the last element, which will send the line ending.
 
 ~~~
-int led = 13;
+int led = 6;
 void setup() {
  pinMode(led, OUTPUT);
  // This turns on the serial connection
@@ -85,7 +85,7 @@ void loop() {
 You should now see pairs of values. If you rotate the potentiometer between readings, you should see the two values change independently.
 
 ~~~
-int led = 13;
+int led = 6;
 void setup() {
  pinMode(led, OUTPUT);
  // This turns on the serial connection
@@ -114,7 +114,7 @@ void loop() {
 The Arduino Serial library can read data submitted byte-by-byte, one character at a time, but it also includes functions that watch for integers or floating-point values. We can use one to control how many times to blink.
 
 ~~~
-int led = 13;
+int led = 6;
 void setup() {
  pinMode(led, OUTPUT);
  Serial.begin(9600);
